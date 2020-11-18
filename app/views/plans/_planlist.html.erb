@@ -1,13 +1,14 @@
 <div class="container">
   <div class="custom-plans-container">
     <% @plans.each_with_index do |plan, index| %>
-      <div class="card custom-card">
+      <div class="card custom-card custom-card-plan">
         <% plan_pictures = ['plan_1_acxcun','plan_2_vwme0f','plan_3_hnu5n4','plan_4_pfdfwf','plan_5_rbvghf','plan_6_fgesi9','plan_7_yn7czo','plan_8_bowbl5','plan_9_cp9yf6','plan_10_yncibx','plan_11_tttsf7','plan12_bdstia'] %>
         <%= cl_image_tag(plan_pictures[index],
-          :width => 300,
-          :height => 310,
-          :crop => :scale,
-          :responsive => :true,
+          :width => 245,
+          :height => 245,
+          :gravity => "face",
+          :crop => :thumb
+          # :responsive => :true,
           # :responsive_placeholder => "blank"
         )%>
         <div class="card-body">
