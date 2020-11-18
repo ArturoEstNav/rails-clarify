@@ -4,13 +4,12 @@
       <div class="card custom-card">
         <% plan_pictures = ['plan_1_acxcun','plan_2_vwme0f','plan_3_hnu5n4','plan_4_pfdfwf','plan_5_rbvghf','plan_6_fgesi9','plan_7_yn7czo','plan_8_bowbl5','plan_9_cp9yf6','plan_10_yncibx','plan_11_tttsf7','plan12_bdstia'] %>
         <%= cl_image_tag(plan_pictures[index],
-          :width => :auto,
+          :width => 300,
           :height => 310,
           :crop => :scale,
           :responsive => :true,
-          :responsive_placeholder => "blank"
-          )
-        %>
+          # :responsive_placeholder => "blank"
+        )%>
         <div class="card-body">
           <h5 class="card-title"><%= plan.name %></h5>
           <p class="card-text"><%=h truncate(plan.description, length: 90) %></p>
