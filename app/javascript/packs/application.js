@@ -32,6 +32,7 @@ import "bootstrap";
 
 import "cloudinary";
 import "cloudinary-core";
+import "cloudinary-jquery";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
